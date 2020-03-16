@@ -1,10 +1,12 @@
 class Product {
-  constructor(id, ownerId, title, imaggeUrl, descrtiption, price) {
+  constructor(id, ownerId, title, imageUrl, description, price) {
     this.id = id
     this.ownerId = ownerId
     this.title = title
-    this.imaggeUrl = imaggeUrl
-    this.descrtiption = descrtiption
+    this.imageUrl = imageUrl
+    this.description = description
     this.price = price
   }
 }
+
+export default Product
