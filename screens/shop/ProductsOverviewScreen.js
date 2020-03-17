@@ -39,7 +39,7 @@ ProductsOverviewScreen.navigationOptions = navData => {
   return {
     headerTitle: 'All Products',
 
-    headerLeft: (
+    headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title='Menu'
@@ -51,7 +51,7 @@ ProductsOverviewScreen.navigationOptions = navData => {
       </HeaderButtons>
     ),
 
-    headerRight: <HeaderButtons HeaderButtonComponent={HeaderButton}>
+    headerRight: () => <HeaderButtons HeaderButtonComponent={HeaderButton}>
       <Item
         title='Cart'
         iconName={Platform.OS === 'android' ? 'md-cart' : 'ios-cart'}
